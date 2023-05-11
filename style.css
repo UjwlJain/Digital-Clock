@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(https://i.pinimg.com/564x/55/a4/bc/55a4bc08ee7cfd9421f72e68e2566191.jpg);
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+    color:whitesmoke;
+  }
+  
+  .clock {
+    display: flex;
+    flex-wrap: wrap; /* allow clock to wrap to new line on smaller screens */
+    justify-content: center;
+  }
+  
+  .clock div {
+    margin: 5px;
+    position: relative;
+    text-align: center; /* center contents in each clock section */
+  }
+  
+  .clock span {
+    width: 160px;
+    height: 80px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+  }
+  
+  .clock .text {
+    height: 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: grey;
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: rgb(114, 9, 114);
+  }
+  
+  /* media query for smaller screens */
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+    }
+  
+    .clock span {
+      width: 120px;
+      height: 60px;
+      font-size: 50px;
+    }
+  
+    .clock .text {
+      height: 25px;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  
+    .clock #ampm {
+      font-size: 16px;
+    }
+  }
+  
